@@ -176,8 +176,9 @@ def boot_up():
     # Check that action A is different to action B
     # Show both actions on screen
     
-    mr_q1.say_text("Action A: " + actionA.action)
-    mr_q2.say_text("Action B: " + actionB.action)
+    #mr_q1.say_text("Action A: " + actionA.action)
+    #mr_q2.say_text("Action B: " + actionB.action)
+    
     #story.print_text("Action A: " + actionA.action, 0, 0)
     #story.print_text("Action B: " + actionB.action, 0, 50)
     #print(f"Action A: {actionA.action}")
@@ -197,16 +198,16 @@ game.set_game_over_effect(False, effects.melt)
 game.set_game_over_message(False, "all the ducks r dead :(")
 game.set_game_over_playable(False, music.melody_playable(music.siren), True)
 
-mr_q1: Sprite = None
-mr_q1 = sprites.create(assets.image("""
-            mr_quack
-        """), SpriteKind.duck)
+#mr_q1: Sprite = None
+#mr_q1 = sprites.create(assets.image("""
+#            mr_quack
+#        """), SpriteKind.duck)
 
-mr_q1.set_position(20, 50)
+#mr_q1.set_position(20, 50)
 
-mr_q2: Sprite = None
-mr_q2 = sprites.create(assets.image("""
-            mr_quack
-        """), SpriteKind.duck)
+#mr_q2: Sprite = None
+#mr_q2 = sprites.create(assets.image("""
+#            mr_quack
+#       """), SpriteKind.duck)
 
-mr_q2.set_position(20, 50)
+#mr_q2.set_position(20, 50)

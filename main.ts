@@ -218,12 +218,12 @@ function boot_up() {
     }
     // random.choice(list(possible_actions.keys()))
     actionB = new AppAction(action_b[0], parseFloat(action_b[3]), action_b[2], action_b[1], parseInt(action_b[4]))
-    //  Check that action A is different to action B
-    //  Show both actions on screen
-    mr_q1.sayText("Action A: " + actionA.action)
-    mr_q2.sayText("Action B: " + actionB.action)
 }
 
+//  Check that action A is different to action B
+//  Show both actions on screen
+// mr_q1.say_text("Action A: " + actionA.action)
+// mr_q2.say_text("Action B: " + actionB.action)
 // story.print_text("Action A: " + actionA.action, 0, 0)
 // story.print_text("Action B: " + actionB.action, 0, 50)
 // print(f"Action A: {actionA.action}")
@@ -238,13 +238,3 @@ boot_up()
 game.setGameOverEffect(false, effects.melt)
 game.setGameOverMessage(false, "all the ducks r dead :(")
 game.setGameOverPlayable(false, music.melodyPlayable(music.siren), true)
-let mr_q1 : Sprite = null
-mr_q1 = sprites.create(assets.image`
-            mr_quack
-        `, SpriteKind.duck)
-mr_q1.setPosition(20, 50)
-let mr_q2 : Sprite = null
-mr_q2 = sprites.create(assets.image`
-            mr_quack
-        `, SpriteKind.duck)
-mr_q2.setPosition(20, 50)
